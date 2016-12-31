@@ -1,0 +1,17 @@
+@font-face {
+font-family: minim;
+src: url("fonts/minim.otf") format("opentype");
+}
+@font-face {
+font-family: koverwatch;
+src: url("fonts/koverwatch.ttf") format("truetype");
+}
+@font-face {
+font-family: VeraMono;
+src: url("fonts/VeraMono.ttf") format("truetype");
+}
+@font-face {
+font-family: slkscreb;
+src: url("fonts/slkscreb.ttf") format("truetype");
+}
+
