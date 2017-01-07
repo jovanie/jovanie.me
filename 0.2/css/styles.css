@@ -1,0 +1,17 @@
+/*  Jovanie De La Cruz
+    Mobile First Web Design
+    Jovanie.me v0.2       */  
+
+/*  Base Styles
+------------------------- */
+html {
+  font-size: 62.5%; 
+  /*  html is set to 62.5% so that all REM are based on 10px. 
+      1.5 rem = 15px. 
+  */
+}
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
