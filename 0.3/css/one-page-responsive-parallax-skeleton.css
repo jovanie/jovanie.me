@@ -147,49 +147,6 @@ body {
 @media screen and (min-width: 1200px) {   
 
 }
-/*  :Parallax;
-------------------------- */
-section.row:last-child {
-	margin-bottom: 0;
-}
-section.row h2 {
-	margin-top: 0;
-}
-section.row p {
-	margin-top: 0;
-}
-section.row p:last-child {
-	margin-bottom: 0;
-}
-section.row.content {
-	padding: 40px 0;
-}
-section.row.parallax {
-	width: 100%;
-	padding-bottom: 40px;
-	height: 400px;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
-section.row.parallax h1 {
-	line-height: 400px;
-	margin-top: 0;
-	text-align: center;
-	text-transform: uppercase;
-	color: white;
-	display: block;
-}
-section.row.parallax-1 {
-  	background-color: black;
-}
-section.row.parallax-2 {
-	background-image: url("../img/chi.jpg");
-}
-section.row.parallax-3 {
-	background-image: url("../img/quad.jpg");
-}
 
 /*  :Typography;
 ------------------------- */
@@ -205,7 +162,7 @@ section.row.parallax-3 {
 	section.row.parallax h1 {
 	}
 }
-section.row.parallax .logo-wrap{
+.parallax-window .logo-wrap{
 	position: absolute;
    	top: 50%;
    	left: 50%;
@@ -214,11 +171,11 @@ section.row.parallax .logo-wrap{
   	margin-left: -150px; /* Half the width */
   	text-align: center;
 }
-section.row.parallax .logo-wrap img {
+.parallax-window .logo-wrap img {
    	width: 150px;
   	height: 150px;
 }
-section.row.parallax h3 {
+.parallax-window h3 {
 	text-align: center;
 	margin-top: 0;
 	color:white;
