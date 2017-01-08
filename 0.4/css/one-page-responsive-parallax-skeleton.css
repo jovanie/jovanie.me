@@ -20,7 +20,7 @@
         padding: 0 0 0 0;
         margin: 0 0 0 0;
         background: transparent;
-        min-width: 400px;
+        min-width: 320px;
         font-family: Novecentosanswide-Book;
         text-transform: none;
     }
@@ -95,7 +95,7 @@
         font-family: Novecentosanswide-Medium;
         text-align: center;
         color: white;
-        font-size: 1.5em;
+        font-size: 1.25em;
         letter-spacing: 3px;
         text-transform: uppercase;
     }
@@ -171,7 +171,7 @@
             /* Half the width */
         }
         .parallax-window h3 {
-            font-size: 2em;
+            font-size: 1.5em;
             letter-spacing: 3px;
         }
         .parallax-window {
@@ -221,7 +221,7 @@
             /* Half the width */
         }
         .parallax-window h3 {
-            font-size: 3em;
+            font-size: 2em;
             letter-spacing: 3px;
         }
         .grid-text {
@@ -276,8 +276,8 @@
             /* Half the width */
         }
         .parallax-window h3 {
-            font-size: 3.5em;
-            letter-spacing: 7px;
+            font-size: 3em;
+            letter-spacing: 3px;
         }.grid-text {
             font-size:3em ;
         }
