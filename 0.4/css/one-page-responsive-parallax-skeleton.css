@@ -13,13 +13,13 @@
     
     html {
         font-size: 62.5%;
+        background-color: white;
     }
     
     body {
         font-size: 1.5em;
         padding: 0 0 0 0;
         margin: 0 0 0 0;
-        background: transparent;
         min-width: 320px;
         font-family: Novecentosanswide-Book;
         text-transform: none;
@@ -75,7 +75,6 @@
         min-height: 300px;
         overflow: hidden;
     }
-    
     .first {
         min-height: 600px;
     }
@@ -261,7 +260,7 @@
             object-fit: cover;
             position: absolute;
             -webkit-filter: blur(3px);
-            filter: blur(3px) grayscale(25%);
+            filter: blur(3px) grayscale(100%);
             transition: 0.20s -webkit-filter linear;
             transform: scale(1.03);
         }
