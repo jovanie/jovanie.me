@@ -1,0 +1,24 @@
+@font-face {
+font-family: Novecentosanswide-Bold;
+src: url("Novecentosanswide-Bold.ttf") format("truetype");
+}
+@font-face {
+font-family: Novecentosanswide-Book;
+src: url("Novecentosanswide-Book.ttf") format("truetype");
+}
+@font-face {
+font-family: Novecentosanswide-DemiBold;
+src: url("Novecentosanswide-DemiBold.ttf") format("truetype");
+}
+@font-face {
+font-family: Novecentosanswide-Light;
+src: url("Novecentosanswide-Light.ttf") format("truetype");
+}
+@font-face {
+font-family: Novecentosanswide-Medium;
+src: url("Novecentosanswide-Medium.ttf") format("truetype");
+}
+@font-face {
+font-family: Novecentosanswide-Normal;
+src: url("Novecentosanswide-Normal.ttf") format("truetype");
+}

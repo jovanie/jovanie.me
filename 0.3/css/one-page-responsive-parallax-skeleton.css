@@ -36,6 +36,7 @@ body {
 	margin: 0 auto;
 	padding: 0 20px;
 	box-sizing: border-box; 
+	font-family: Novecentosanswide-Book;
 	
 }
 .column,
@@ -44,16 +45,52 @@ body {
 	float: left;
 	box-sizing: border-box; 
 }
+.row {
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	top:0;
+}
 
 /*  :Responsive Grids;
 ------------------------- */
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (max-width: 549px) {
+	.container {
+		width: 100%; 
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+	.columns,.column { 
+		width: 100%;
+		margin: -15px 0 -35px 0;
+		padding: 0 0 0 0;
+	}
+
+	.one-half.column { 
+	}
+  
+}
+/* For devices larger than 400px */
+@media (min-width: 550px) and (max-width: 767px) {
+	.container {
+		width: 100%;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0; }
+	
+
+	.three.columns { 
+		width: 50%;
+		margin: 0 0 -30px 0;
+	}
+
+	.one-half.column { 
+		width: 100%; 
+	}
   
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 768px) {
 	.container {
 		width: 80%; }
 	.column,
@@ -166,9 +203,9 @@ body {
 	position: absolute;
    	top: 50%;
    	left: 50%;
-   	width: 300px;
-  	margin-top: 120px; /* Half the height */
-  	margin-left: -150px; /* Half the width */
+   	width: 500px;
+  	margin-top: 225px; /* Half the height */
+  	margin-left: -250px; /* Half the width */
   	text-align: center;
 }
 .parallax-window .logo-wrap img {
@@ -176,11 +213,25 @@ body {
   	height: 150px;
 }
 .parallax-window h3 {
+	position: relative;
 	text-align: center;
 	margin-top: 0;
 	color:white;
 	margin-left: auto;
 	margin-right: auto;
+	font-family: Novecentosanswide-Light;
+	font-size: 2.5em;
+	letter-spacing: 3px;
+
+}
+.parallax-window h1 {
+	line-height: 400px;
+	margin-top: 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	display: block;
+	font-size: 4em;
 }
 .grid-image{
 	float: left;
@@ -213,12 +264,12 @@ body {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
+	font-size: 2.5em;
 }
 .form-style-7{
     max-width:400px;
     margin:0 auto;
     border-radius:2px;
-    font-family: Georgia, "Times New Roman", Times, serif;
 }
 .form-style-7 h2{
     display: block;
@@ -254,7 +305,6 @@ body {
     color: #B9B9B9;
     font-size: 14px;
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .form-style-7 input[type="text"],
 .form-style-7 input[type="date"],
@@ -279,21 +329,8 @@ body {
     line-height: 25px;
     font-size: 16px;
     padding: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
 }
-.form-style-7 input[type="text"]:focus,
-.form-style-7 input[type="date"]:focus,
-.form-style-7 input[type="datetime"]:focus,
-.form-style-7 input[type="email"]:focus,
-.form-style-7 input[type="number"]:focus,
-.form-style-7 input[type="search"]:focus,
-.form-style-7 input[type="time"]:focus,
-.form-style-7 input[type="url"]:focus,
-.form-style-7 input[type="password"]:focus,
-.form-style-7 textarea:focus,
-.form-style-7 select:focus 
-{
-}
+
 .form-style-7 li > span{
     background: #F3F3F3;
     display: block;
@@ -301,7 +338,6 @@ body {
     margin: 0 -9px -9px -9px;
     text-align: center;
     color: #C0C0C0;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
 }
 .form-style-7 textarea{
@@ -334,14 +370,19 @@ i {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, 40%);
+	transform: translate(-50%, 50%);
 }
 .tablesocial {
+	float: left;
 	width: 100%;
 	height: 100%;
 	position: relative;
 }
+.tablesocial a{color: black;}
 .parallax-window {
     min-height: 400px;
-    background: transparent;
+	background-color: black;
+}
+.first {
+	min-height: 600px;
 }
