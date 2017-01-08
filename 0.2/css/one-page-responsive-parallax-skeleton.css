@@ -259,17 +259,14 @@ section.row.parallax h3 {
 }
 .form-style-7{
     max-width:400px;
-    margin:50px auto;
-    background:#fff;
+    margin:0 auto;
     border-radius:2px;
-    padding:20px;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
-.form-style-7 h1{
+.form-style-7 h2{
     display: block;
     text-align: center;
     padding: 0;
-    margin: 0px 0px 20px 0px;
     color: #5C5C5C;
     font-size:x-large;
 }
@@ -361,9 +358,29 @@ section.row.parallax h3 {
     border-bottom: 3px solid #5994FF;
     border-radius: 3px;
     color: #D2E2FF;
+    font-size: 1em;
 }
 .form-style-7 input[type="submit"]:hover,
 .form-style-7 input[type="button"]:hover{
     background: #6B9FFF;
     color:#fff;
+}
+
+i {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+
+}
+.centerTable { 
+	margin: 0px auto; 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, 40%);
+}
+.tablesocial {
+	width: 100%;
+	height: 100%;
+	position: relative;
 }

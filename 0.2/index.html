@@ -117,17 +117,17 @@
 						<ul>
 						<li>
 						    <label for="name">Name</label>
-						    <input type="text" name="name" maxlength="100">
+						    <input type="text" name="name" maxlength="100" placeholder="Traveling Thrill Seeker">
 						    <span>Enter your full name here</span>
 						</li>
 						<li>
 						    <label for="email">Email</label>
-						    <input type="email" name="email" placeholder="Your email">
+						    <input type="email" name="email" placeholder="hello@adventure.com">
 						    <span>Enter a valid email address</span>
 						</li>
 						<li>
 						    <label for="message">Message</label>
-						    <textarea name="message" onkeyup="adjust_textarea(this)"></textarea>
+						    <textarea name="message" onkeyup="adjust_textarea(this)" placeholder="Adventure is out there!"></textarea>
 						    <span>Say something!</span>
 						</li>
 						<li>
@@ -144,11 +144,21 @@
 							</script>
 		    	</div>
 		    	<div class="one-half column">
-		    		<form method="POST" action="http://formspree.io/jovaniedelacruz@gmail.com">
-					  <input type="email" name="email" placeholder="Your email">
-					  <textarea name="message" placeholder="Your message"></textarea>
-					  <button type="submit">Send</button>
-					</form>
+		    		<div class="tablesocial">
+				    	<table class="centerTable">
+				    		<tr>
+				    			<td><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></td>
+				    			<td><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></td>
+				    			<td><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></td>
+				    		</tr>
+				    		<tr>
+				    			<td><i class="fa fa-github fa-4x" aria-hidden="true"></i></td>
+				    			<td><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></td>
+				    			<td><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></td>
+				    		</tr>
+				    	</table>
+				    </div>
+		    		
 		    	</div>
 		  	</div>
 		  </div>
