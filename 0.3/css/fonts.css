@@ -14,7 +14,6 @@ src: url("fonts/VeraMono.ttf") format("truetype");
 font-family: slkscreb;
 src: url("fonts/slkscreb.ttf") format("truetype");
 }
-
 @font-face {
 font-family: Novecentosanswide-Bold;
 src: url("fonts/Novecentosanswide-Bold.ttf") format("truetype");

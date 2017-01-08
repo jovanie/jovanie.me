@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jovanie.me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/one-page-responsive-parallax-skeleton.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+</head>
+
+<body>
+    <div class="parallax-window first" data-parallax="scroll" data-image-src="img/chi3.jpg" data-androidFix="false">
+        <div class="container">
+            <div class="head-wrap">
+                <h3>Jovanie De La Cruz</h3>
+                <h3>Design and Photogrphy</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Hey!</h2>
+        <p>My name is Jovanie De La Cruz and I like to make websites and take photos. My interest in technology started at a young age but my pursuit in programming and casual photography really sparked in high school. You can catch me tweaking code, putting together custom PCs, or repairing electronics for friends and family. When I have time to myself I like to take time lapses or play competitive Overwatch online.
+    </div>
+    </section>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/alt.jpg">
+        <div class="container">
+            <h1>Porfolio</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="three columns">
+                <a class="grid-image" href="#">
+                    <img src="img/cof.jpg">
+                    <div class="grid-text">Premium</div>
+                </a>
+            </div>
+            <div class="three columns">
+                <a class="grid-image" href="#">
+                    <img src="img/mnq.jpg">
+                    <div class="grid-text">ALPFA</div>
+                </a>
+            </div>
+            <div class="three columns">
+                <a class="grid-image" href="#">
+                    <img src="img/kim.jpg">
+                    <div class="grid-text">Peach Press</div>
+                </a>
+            </div>
+            <div class="three columns">
+                <a class="grid-image" href="#">
+                    <img src="img/mic.jpg">
+                    <div class="grid-text">Jov.Photo</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/alma.jpg">
+        <div class="container">
+            <h1>Contact</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="one-half column">
+                <form class="form-style-7" method="POST" action="http://formspree.io/jovaniedelacruz@gmail.com">
+                    <h2>Contact Me!</h2>
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" maxlength="100" placeholder="Traveling Thrill Seeker">
+                            <span>Enter your full name here</span>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="hello@adventure.com">
+                            <span>Enter a valid email address</span>
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea name="message" onkeyup="adjust_textarea(this)" placeholder="Adventure is out there!"></textarea>
+                            <span>Say something!</span>
+                        </li>
+                        <li>
+                            <input type="submit" value="Send This">
+                        </li>
+                    </ul>
+                </form>
+                <script type="text/javascript">
+                //auto expand textarea
+                function adjust_textarea(h) {
+                    h.style.height = "20px";
+                    h.style.height = (h.scrollHeight) + "px";
+                }
+                </script>
+            </div>
+            <div class="one-half column">
+                <div class="tablesocial">
+                    <table class="centerTable">
+                        <tr>
+                            <td><a href="#"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a></td>
+                            <td><a href="#"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a></td>
+                            <td><a href="#"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a></td>
+                            <td><a href="#"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a></td>
+                            <td><a href="#"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
