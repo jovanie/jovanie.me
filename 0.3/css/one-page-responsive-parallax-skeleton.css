@@ -1,0 +1,390 @@
+/* one-page-responsive-parallax-skeleton */
+
+/*  Jovanie De La Cruz
+    Mobile First Web Design
+    Jovanie.me v0.2       */  
+
+/*  :Base Styles;
+------------------------- */
+html {
+	font-size: 62.5%; 
+	/*  html is set to 62.5% so that all REM are based on 10px. 
+	  1.5 rem = 15px. 
+	*/
+}
+body {
+	font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+/*
+* Modified Version of Skeleton V2.0.4 by Jovanie De La Cruz
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/*  :Grid;
+------------------------- */
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box; 
+	
+}
+.column,
+.columns {
+	width: 100%;
+	float: left;
+	box-sizing: border-box; 
+}
+
+/*  :Responsive Grids;
+------------------------- */
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+	.container {
+		width: 80%; }
+	.column,
+	.columns {
+		margin-left: 4%; }
+	.column:first-child,
+	.columns:first-child {
+		margin-left: 0; }
+
+
+	.one.column,
+	.one.columns                    { width: 4.66666666667%; }
+	.two.columns                    { width: 13.3333333333%; }
+	.three.columns                  { width: 22%;            }
+	.four.columns                   { width: 30.6666666667%; }
+	.five.columns                   { width: 39.3333333333%; }
+	.six.columns                    { width: 48%;            }
+	.seven.columns                  { width: 56.6666666667%; }
+	.eight.columns                  { width: 65.3333333333%; }
+	.nine.columns                   { width: 74.0%;          }
+	.ten.columns                    { width: 82.6666666667%; }
+	.eleven.columns                 { width: 91.3333333333%; }
+	.twelve.columns                 { width: 100%; margin-left: 0; }
+
+	.one-third.column               { width: 30.6666666667%; }
+	.two-thirds.column              { width: 65.3333333333%; }
+
+	.one-half.column                { width: 48%; }
+
+	/* Offsets */
+	.offset-by-one.column,
+	.offset-by-one.columns          { margin-left: 8.66666666667%; }
+	.offset-by-two.column,
+	.offset-by-two.columns          { margin-left: 17.3333333333%; }
+	.offset-by-three.column,
+	.offset-by-three.columns        { margin-left: 26%;            }
+	.offset-by-four.column,
+	.offset-by-four.columns         { margin-left: 34.6666666667%; }
+	.offset-by-five.column,
+	.offset-by-five.columns         { margin-left: 43.3333333333%; }
+	.offset-by-six.column,
+	.offset-by-six.columns          { margin-left: 52%;            }
+	.offset-by-seven.column,
+	.offset-by-seven.columns        { margin-left: 60.6666666667%; }
+	.offset-by-eight.column,
+	.offset-by-eight.columns        { margin-left: 69.3333333333%; }
+	.offset-by-nine.column,
+	.offset-by-nine.columns         { margin-left: 78.0%;          }
+	.offset-by-ten.column,
+	.offset-by-ten.columns          { margin-left: 86.6666666667%; }
+	.offset-by-eleven.column,
+	.offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+	.offset-by-one-third.column,
+	.offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+	.offset-by-two-thirds.column,
+	.offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+	.offset-by-one-half.column,
+	.offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*  :Media Queries;
+------------------------- */
+/* mobile first styles */
+@media screen and (min-width: 400px) {   
+
+}
+/* start of small tablet styles */
+@media screen and (min-width: 600px) {   
+
+}
+/* start of large tablet styles */
+@media screen and (min-width: 768px) {   
+
+}
+/* start of desktop styles */
+@media screen and (min-width: 990px) {   
+
+}
+/* start of large desktop styles */
+@media screen and (min-width: 1200px) {   
+
+}
+/*  :Parallax;
+------------------------- */
+section.row:last-child {
+	margin-bottom: 0;
+}
+section.row h2 {
+	margin-top: 0;
+}
+section.row p {
+	margin-top: 0;
+}
+section.row p:last-child {
+	margin-bottom: 0;
+}
+section.row.content {
+	padding: 40px 0;
+}
+section.row.parallax {
+	width: 100%;
+	padding-bottom: 40px;
+	height: 400px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+section.row.parallax h1 {
+	line-height: 400px;
+	margin-top: 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	display: block;
+}
+section.row.parallax-1 {
+  	background-color: black;
+}
+section.row.parallax-2 {
+	background-image: url("../img/chi.jpg");
+}
+section.row.parallax-3 {
+	background-image: url("../img/quad.jpg");
+}
+
+/*  :Typography;
+------------------------- */
+@media all and (min-width: 600px) {
+	section.row h2 {
+	}
+	section.row p {
+	}
+	section.row.parallax h1 {
+	}
+}
+@media all and (min-width: 960px) {
+	section.row.parallax h1 {
+	}
+}
+section.row.parallax .logo-wrap{
+	position: absolute;
+   	top: 50%;
+   	left: 50%;
+   	width: 300px;
+  	margin-top: 120px; /* Half the height */
+  	margin-left: -150px; /* Half the width */
+  	text-align: center;
+}
+section.row.parallax .logo-wrap img {
+   	width: 150px;
+  	height: 150px;
+}
+section.row.parallax h3 {
+	text-align: center;
+	margin-top: 0;
+	color:white;
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid-image{
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding-bottom:100%;
+	margin: 1em auto;
+	overflow:hidden;
+	position:relative;
+	}
+.grid-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position:absolute;
+	-webkit-filter: blur(3px);
+  	filter: blur(3px);
+
+  	transition: 0.20s -webkit-filter linear;
+}
+.grid-image img:hover{
+	-webkit-filter: blur(0px);
+  	filter: blur(0px);
+  	transition: 0.20s -webkit-filter linear;
+
+}
+.grid-text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.form-style-7{
+    max-width:400px;
+    margin:0 auto;
+    border-radius:2px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 h2{
+    display: block;
+    text-align: center;
+    padding: 0;
+    color: #5C5C5C;
+    font-size:x-large;
+}
+.form-style-7 ul{
+    list-style:none;
+    padding:0;
+    margin:0;   
+}
+.form-style-7 li{
+    display: block;
+    padding: 9px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.form-style-7 li:last-child{
+    border:none;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.form-style-7 li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 input[type="text"]:focus,
+.form-style-7 input[type="date"]:focus,
+.form-style-7 input[type="datetime"]:focus,
+.form-style-7 input[type="email"]:focus,
+.form-style-7 input[type="number"]:focus,
+.form-style-7 input[type="search"]:focus,
+.form-style-7 input[type="time"]:focus,
+.form-style-7 input[type="url"]:focus,
+.form-style-7 input[type="password"]:focus,
+.form-style-7 textarea:focus,
+.form-style-7 select:focus 
+{
+}
+.form-style-7 li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.form-style-7 textarea{
+    resize:none;
+}
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"]{
+    background: #2471FF;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 3px solid #5994FF;
+    border-radius: 3px;
+    color: #D2E2FF;
+    font-size: 1em;
+}
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover{
+    background: #6B9FFF;
+    color:#fff;
+}
+
+i {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+
+}
+.centerTable { 
+	margin: 0px auto; 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, 40%);
+}
+.tablesocial {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
