@@ -401,7 +401,6 @@
     }
     
     .tablesocial {
-        float: left;
         width: 100%;
         height: 100%;
         position: relative;
@@ -435,8 +434,11 @@
 
 .detail.open{
     display:block;
-    background-color: grey;
+    background-color: white;
 }
 
 .detail p {
+}
+.contact, .row {
+	background-color: white;
 }
