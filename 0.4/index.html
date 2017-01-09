@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="container textbox">
-       	<p>Hey!</p>
+        <p>Hey!</p>
         <p>My name is Jovanie De La Cruz and I like to make websites and take photos. My interest in technology started at a young age but my pursuit in programming and casual photography really sparked in high school. You can catch me tweaking code, putting together custom PCs, or repairing electronics for friends and family. When I have time to myself I like to take time lapses or play competitive Overwatch online.
     </div>
     </section>
@@ -32,33 +32,96 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="three columns">
-                <a class="grid-image" href="http://jovanie.me/premium/">
+        <div class="row ">
+            <div class="three columns thumbnails">
+                <a class="grid-image" href="javascript:;" rel="premium">
                     <img src="img/cof.jpg">
                     <div class="grid-text">Premium</div>
                 </a>
             </div>
             <div class="three columns">
                 <a class="grid-image" href="#">
-                    <img src="img/mnq.jpg">
+                    <img src="img/alp1.jpg">
                     <div class="grid-text">ALPFA</div>
                 </a>
             </div>
             <div class="three columns">
                 <a class="grid-image" href="#">
                     <img src="img/kim.jpg">
-                    <div class="grid-text">Peach Press</div>
+                    <div class="grid-text">UIUC PBL</div>
                 </a>
             </div>
-            <div class="three columns">
-                <a class="grid-image" href="#">
-                    <img src="img/mic.jpg">
+            <div class="three columns thumbnails">
+                <a class="grid-image" href="javascript:;" rel="photo">
+                    <img src="img/rain.jpg">
                     <div class="grid-text">Jov.Photo</div>
                 </a>
             </div>
         </div>
     </div>
+    <div class="container detail-wrap">
+        <div class="row details">
+        	<div class="detail" id="premium">
+	            <div class="container textbox" >
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit nunc nulla, tempor mollis nulla ultricies vel. Donec commodo tempor enim. Nullam dictum viverra velit, at mollis tortor fermentum ac. Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p><p> Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed malesuada lacus. Integer vehicula leo ac metus bibendum, at faucibus leo tempor. Cras feugiat nisi sit amet diam porta, ut scelerisque eros lobortis.</p>
+	            </div>
+	        </div>
+	        <div class="detail" id="photo">
+	            <div class="container textbox">
+	                <p> Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed malesuada lacus. Integer vehicula leo ac metus bibendum, at faucibus leo tempor. Cras feugiat nisi sit amet diam porta, ut scelerisque eros lobortis.</p>
+	            </div>
+	        </div>
+        </div>
+        </div>
+
+
+        <script type="text/javascript">
+        //if(any visible)
+        //hide all other, then show this one
+        //if(current visible == clicked)
+        //hide current
+        //else show target
+        	
+$(document).ready(function() {
+
+	var tab = $('.thumbnails > a'),
+		tabContent = $('.detail'),
+		tabParent = $('.details');
+	
+		if(tab.length){
+		
+			tab.off('click').on('click', function(){
+				
+				var ele = $(this),
+					currContent = $('#'+ele.attr('rel'));
+				
+					if(!ele.hasClass('open')){
+					
+						tabParent.stop(true, true).animate({
+							height:'$(currContent).outerHeight()'+'px'
+							
+						},function() {
+							tabContent.removeClass('open');
+							currContent.addClass('open');
+							tab.removeClass('open');
+							ele.addClass('open');
+							
+							tabParent.stop(true, true).animate({
+								height:'$(currContent).outerHeight()'+'px'
+							}); 
+							 
+						});
+					}  
+		
+			});
+	
+			$('.thumbnails > a:eq(0)').click();
+
+	}
+
+});
+
+        </script>
     <div class="parallax-window" data-parallax="scroll" data-image-src="img/alma.jpg" data-bleed="10">
         <div class="container">
             <h1>Contact</h1>
@@ -68,7 +131,9 @@
         <div class="row">
             <div class="one-half column">
                 <form class="form-style-7" method="POST" action="http://formspree.io/jovaniedelacruz@gmail.com">
-                    <h2>Contact Me!</h2><br><br>
+                    <h2>Contact Me!</h2>
+                    <br>
+                    <br>
                     <ul>
                         <li>
                             <label for="name">Name</label>

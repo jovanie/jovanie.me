@@ -410,3 +410,33 @@
     .tablesocial a {
         color: black;
     }
+
+.detail-wrap {
+}
+.details{
+}
+
+.thumbnails {
+}
+
+.thumbnails > a {
+    display: block;
+}
+
+.thumbnails a.open{
+}
+
+.detail {
+    
+    display: none;
+    top:0;
+    left:0;
+}
+
+.detail.open{
+    display:block;
+    background-color: grey;
+}
+
+.detail p {
+}
