@@ -58,14 +58,14 @@
             </div>
         </div>
     </div>
-    <div class="container textbox">
-        <div class="details">
-            <div class="detail" id="premium">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit nunc nulla, tempor mollis nulla ultricies vel. Donec commodo tempor enim. Nullam dictum viverra velit, at mollis tortor fermentum ac. Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-            </div>
-            <div class="detail" id="photo">
-                <p> Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed malesuada lacus. Integer vehicula leo ac metus bibendum, at faucibus leo tempor. Cras feugiat nisi sit amet diam porta, ut scelerisque eros lobortis.</p>
-            </div>
+    <div class="container slideBox">
+        <div class="details textbox">
+                <div class="detail" id="premium">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit nunc nulla, tempor mollis nulla ultricies vel. Donec commodo tempor enim. Nullam dictum viverra velit, at mollis tortor fermentum ac. Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                </div>
+                <div class="detail" id="photo">
+                    <p> Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed malesuada lacus. Integer vehicula leo ac metus bibendum, at faucibus leo tempor. Cras feugiat nisi sit amet diam porta, ut scelerisque eros lobortis.</p>
+                </div>
         </div>
     </div>
     <script>
@@ -73,11 +73,13 @@
 
         var tab = $('.thumbnails > a'),
             tabContent = $('.detail'),
-            tabParent = $('.details');
+            tabParent = $('.details'),
+            tabPadding = $('.slideBox'),
+            image = $('.grid-image img');
 
         if (tab.length) {
 
-            tab.off('click').on('click', function() {
+            tab.on('click', function() {
 
                 var ele = $(this),
                     currContent = $('#' + ele.attr('rel'));
@@ -85,21 +87,42 @@
                 if (!ele.hasClass('open')) {
 
                     tabParent.stop(true, true).animate({
-                        height: '$(currContent).outerHeight()' + 'px'
+                        height: currContent.height() + 'px'
 
                     }, function() {
                         tabContent.removeClass('open');
                         currContent.addClass('open');
                         tab.removeClass('open');
                         ele.addClass('open');
+                        tabPadding.addClass('slideBoxShow');
+                        $('.activeImage').removeClass('activeImage');
+                        ele.addClass('activeImage')
 
                         tabParent.stop(true, true).animate({
-                            height: '$(currContent).outerHeight()' + 'px'
+                            height: currContent.height() + 'px'
                         });
 
                     });
                 }
+                if (ele.hasClass('open')) {
+                    tabParent.stop(true, true).animate({
+                        height: '0px'
 
+                    }, function() {
+                        tabContent.removeClass('open');
+                        currContent.removeClass('open');
+                        tab.removeClass('open');
+                        ele.removeClass('open');
+                        tabPadding.removeClass('slideBoxShow');
+                        $('.activeImage').removeClass('activeImage');
+
+                        tabParent.stop(true, true).animate({
+                            height: currContent.height() + 'px'
+                        });
+
+                    });
+                }
+                
             });
 
             $('.thumbnails > a:eq(0)').click();
@@ -108,7 +131,7 @@
 
     });
     </script>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/alma.jpg" data-bleed="100">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/alma.jpg" data-bleed="200">
         <div class="container">
             <h1>Contact</h1>
         </div>

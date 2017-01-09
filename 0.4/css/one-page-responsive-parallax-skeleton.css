@@ -420,12 +420,12 @@
         display: block;
     }
     
-    .thumbnails a.open { filter: grayscale(0%); }
+    .thumbnails a.open {
+        filter: grayscale(0%);
+    }
     
     .detail {
         display: none;
-        top: 0;
-        left: 0;
     }
     
     .detail.open {
@@ -433,3 +433,17 @@
     }
     
     .detail p {}
+    
+    .slideBox {
+        display: none;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    
+    .slideBoxShow {
+        display: block;
+    }
+    
+    .activeImage > img {
+        filter: grayscale(0%) !important;
+    }
