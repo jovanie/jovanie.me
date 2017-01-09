@@ -447,3 +447,18 @@
     .activeImage > img {
         filter: grayscale(0%) !important;
     }
+    #git{
+        position: absolute;
+        margin: 0px auto;
+        position: absolute;
+        left: 50%;
+        top: 1%;
+        transform: translate(-50%, 0%);
+    }
+    #git h1{
+        font-size: 1.5em;
+    }
+    #git a{
+        color: white;
+        text-decoration: none;
+    }
