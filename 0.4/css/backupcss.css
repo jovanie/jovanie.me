@@ -63,7 +63,6 @@
     .textbox {
         padding: 2em;
         font-size: 1.5em;
-        background-color: white;
     }
     
     p {
@@ -73,10 +72,11 @@
 */
     
     .parallax-window {
+    	position: relative;
+    	display: block;
         min-height: 300px;
         overflow: hidden;
     }
-    
     .first {
         min-height: 600px;
     }
@@ -279,9 +279,8 @@
         .parallax-window h3 {
             font-size: 3em;
             letter-spacing: 3px;
-        }
-        .grid-text {
-            font-size: 3em;
+        }.grid-text {
+            font-size:3em ;
         }
     }
     /* Contact Form
@@ -413,23 +412,33 @@
     .tablesocial a {
         color: black;
     }
-    
-    .details {}
-    
-    .thumbnails > a {
-        display: block;
-    }
-    
-    .thumbnails a.open { filter: grayscale(0%); }
-    
-    .detail {
-        display: none;
-        top: 0;
-        left: 0;
-    }
-    
-    .detail.open {
-        display: block;
-    }
-    
-    .detail p {}
+
+.detail-wrap {
+}
+.details{
+}
+
+.thumbnails {
+}
+
+.thumbnails > a {
+    display: block;
+}
+
+.thumbnails a.open{
+}
+
+.detail {
+
+    display: none;
+    top:0;
+    left:0;
+}
+
+.detail.open{
+    display:block;
+    background-color: white;
+}
+
+.detail p {
+}
