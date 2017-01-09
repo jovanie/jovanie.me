@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="parallax-window first" data-parallax="scroll" data-image-src="img/chib.jpg" data-bleed="10">
+    <div class="parallax-window first" data-parallax="scroll" data-image-src="img/chib.jpg" data-bleed="50">
         <div class="container">
             <div class="head-wrap">
                 <h3>Jovanie De La Cruz</h3>
@@ -25,33 +25,33 @@
         <p>Hey!</p>
         <p>My name is Jovanie De La Cruz and I like to make websites and take photos. My interest in technology started at a young age but my pursuit in programming and casual photography really sparked in high school. You can catch me tweaking code, putting together custom PCs, or repairing electronics for friends and family. When I have time to myself I like to take time lapses or play competitive Overwatch online.</p>
     </div>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/alt.jpg" data-bleed="10">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/alt.jpg" data-bleed="50">
         <div class="container">
             <h1>Porfolio</h1>
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row"><a id="port"></a>
             <div class="three columns thumbnails">
-                <a class="grid-image" href="javascript:;" rel="premium">
+                <a class="grid-image" href="#port" rel="premium">
                     <img src="img/cof.jpg">
                     <div class="grid-text">Premium</div>
                 </a>
             </div>
             <div class="three columns thumbnails">
-                <a class="grid-image" href="#" target="_blank">
+                <a class="grid-image" href="#port" rel="alpfa">
                     <img src="img/alp1.jpg">
                     <div class="grid-text">ALPFA</div>
                 </a>
             </div>
             <div class="three columns thumbnails">
-                <a class="grid-image" href="#" target="_blank">
+                <a class="grid-image" href="#port" rel="pbl">
                     <img src="img/kim.jpg">
                     <div class="grid-text">UIUC PBL</div>
                 </a>
             </div>
             <div class="three columns thumbnails">
-                <a class="grid-image" href="javascript:;" rel="photo">
+                <a class="grid-image" href="#port" rel="photo">
                     <img src="img/rain.jpg">
                     <div class="grid-text">Jov.Photo</div>
                 </a>
@@ -61,7 +61,14 @@
     <div class="container slideBox">
         <div class="details textbox">
                 <div class="detail" id="premium">
+                    
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit nunc nulla, tempor mollis nulla ultricies vel. Donec commodo tempor enim. Nullam dictum viverra velit, at mollis tortor fermentum ac. Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                </div>
+                <div class="detail" id="alpfa">
+                    <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed malesuada lacus. Integer vehicula leo ac metus bibendum, at faucibus leo tempor. Cras feugiat nisi sit amet diam porta, ut scelerisque eros lobortis. Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. </p>
+                </div>
+                <div class="detail" id="pbl">
+                    <p> Integer vehicula leo ac metus bibendum, at faucibus leo tempor. Cras feugiat nisi sit amet diam porta, ut scelerisque eros lobortis. Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed malesuada lacus. </p>
                 </div>
                 <div class="detail" id="photo">
                     <p> Vestibulum nec mi eget dui efficitur varius. Vivamus eu varius dolor. Vivamus at sem ultricies, luctus justo ac, consectetur sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed malesuada lacus. Integer vehicula leo ac metus bibendum, at faucibus leo tempor. Cras feugiat nisi sit amet diam porta, ut scelerisque eros lobortis.</p>
@@ -125,7 +132,8 @@
                 
             });
 
-            $('.thumbnails > a:eq(0)').click();
+            //Set first on by default
+            //$('.thumbnails > a:eq(0)').click();
 
         }
 
